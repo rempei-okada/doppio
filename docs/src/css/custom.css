@@ -15,3 +15,16 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(127, 127, 127, 0.098);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7cc3b3;
+}

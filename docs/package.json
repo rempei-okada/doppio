@@ -4,7 +4,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "build && gh-pages -d build -b demo",
+    "deploy": "docusaurus build && gh-pages -d build -b demo",
     "serve": "docusaurus serve",
     "lint": "eslint --cache \"**/*.js\" && stylelint \"**/*.css\""
   },

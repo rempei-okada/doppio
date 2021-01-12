@@ -1,8 +1,8 @@
 module.exports = {
     title: "Doppio Design",
     tagline: "Light Weight and Modern web design frame work",
-    baseUrl: "/doppio",
-    url: "https://rempei-okada.github.io/doppio",
+    baseUrl: "/doppio/",
+    url: "https://rempei-okada.github.io",
     onBrokenLinks: "throw",
     favicon: "img/favicon.ico",
     organizationName: "rempei-okada",
@@ -16,7 +16,7 @@ module.exports = {
             },
             items: [
                 {
-                    to: "doppio/docs/",
+                    to: "docs/",
                     activeBasePath: "docs",
                     label: "Docs",
                     position: "left",

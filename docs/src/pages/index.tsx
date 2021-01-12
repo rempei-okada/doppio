@@ -55,7 +55,7 @@ function Home() {
             <main className="doppio toppage">
                 <article className="title-section strech d-flex flex-column justify-center align-center  ma-auto">
                     <section className="d-flex flex-column justify-center align-center ma-auto">
-                        <img src="/img/doppio.png" height="240" alt="doppio logo" />
+                        <img src="img/doppio.png" height="240" alt="doppio logo" />
                         <p className="hero__subtitle px-4">{siteConfig.tagline}</p>
 
                         <section className="mt-12 d-flex" style={{ height: "60px" }}>
@@ -85,7 +85,7 @@ function Home() {
 
                 {/* Cards */}
                 <article className="strech-x cream lighten-5 mt-auto">
-                    <article className="container max-width-xl d-flex flex-column">
+                    <article className="container d-flex flex-column" style={{ maxWidth: "1280px" }}>
                         <section className="row ma-auto strech-x pa-3 mt-8" style={{ minHeight: "240px", transitionDelay: "0.2s" }}>
                             <div className="column col-3 col-sm-6 pa-3 opening-animation top-card">
                                 <div className="card shadow-6 ">

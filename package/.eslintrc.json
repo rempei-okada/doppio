@@ -48,10 +48,6 @@
         ],
         "dot-notation": "error",
         "eqeqeq": "error",
-        "linebreak-style": [
-          "error",
-          "windows"
-        ],
         "space-before-function-paren": "off",
         "semi": [
           "error",

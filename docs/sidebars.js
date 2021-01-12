@@ -29,6 +29,6 @@ module.exports = {
             "scripts/ScrollTrigger",
         ],
         // eslint-disable-next-line global-require
-        "Scripts API Reference": require("./typedoc-sidebar")
+        // "Scripts API Reference": require("./typedoc-sidebar")
     },
 };
