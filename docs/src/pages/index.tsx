@@ -98,7 +98,7 @@ function Home() {
                                             Standard
                                         </div>
                                         <div className="font-xs mt-3 gray-text">Script bundle size of ~0KB</div>
-                                        <div className="font-xs mt-3 gray-text">CSS bundle size of ~40KB</div>
+                                        <div className="font-xs mt-3 gray-text">CSS bundle size of ~60KB</div>
                                         <div
                                             style={{ borderLeft: "4px solid rgb(122, 108, 87)" }}
                                             className="font-sm pl-3 mt-3"
@@ -106,7 +106,7 @@ function Home() {
                                             Full
                                         </div>
                                         <div className="font-xs mt-3 gray-text">Script bundle size of ~20KB</div>
-                                        <div className="font-xs mt-3 gray-text">CSS bundle size of ~40KB</div>
+                                        <div className="font-xs mt-3 gray-text">CSS bundle size of ~60KB</div>
                                         <div className="font-xs mt-3 gray-text">Color pack CSS bundle size of ~50KB</div>
                                     </div>
                                 </div>

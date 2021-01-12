@@ -5,8 +5,21 @@
 Doppio is a lightweight, simple and modern web design frame work.
 Most core features are built entirely with CSS, but can be made even more powerful by loading scripts.
 
-Doppio is good for building websites, not web apps, so it's designed to keep other libraries and frameworks clean.
+># Features
+
+Doppio is good for building websites, not web apps.
+so it's designed to keep other libraries and frameworks clean.
 Standard version consists of pure CSS only and Clean.
+
+### Bundles
+
+| Package    | js   | css  |
+| ---------- | ---- | ---- |
+| Standard   | 0KB  | 47KB |
+| Full       | 20KB | 47KB |
+| Color Pack | 0KB  | 46KB |
+
+### Modules
 
 |               | Standard | Full | Color Pack |
 | ------------- | -------- | ---- | ---------- |
@@ -17,6 +30,7 @@ Standard version consists of pure CSS only and Clean.
 | Colors Pack   |          |      | ○          |
 | Utilities     | ○        | ○    |            |
 | Scripts       |          | ○    |            |
+
 
 ---
  
