@@ -1,0 +1,249 @@
+// Typography
+// font size
+
+.font-xs {
+  font-size: $font-size-x-sm !important;
+}
+.font-sm {
+  font-size: $font-size-sm !important;
+}
+.font-md {
+  font-size: $font-size !important;
+}
+.font-lg {
+  font-size: $font-size-lg !important;
+}
+.font-xl {
+  font-size: $font-size-xl !important;
+}
+
+// Font weight
+.font-weight-100 {
+  font-weight: 100 !important;
+}
+.font-weight-200 {
+  font-weight: 200 !important;
+}
+.font-weight-300 {
+  font-weight: 300 !important;
+}
+.font-weight-400 {
+  font-weight: 400 !important;
+}
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+.font-weight-800 {
+  font-weight: 800 !important;
+}
+.font-weight-900 {
+  font-weight: 900 !important;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+strong,
+b,
+p {
+  color: inherit;
+  line-height: 1.2;
+  display: block;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+a{
+  color: currentColor;
+  text-decoration: auto;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+p,
+div {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+small {
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+
+strong,
+b {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+// Paragraphs
+p {
+  margin: 0 0 $line-height;
+  line-height: 1.6;
+  font-size: $font-size-sm;
+}
+
+// Semantic text elements
+a,
+ins,
+u {
+  text-decoration-skip: ink edges;
+}
+
+abbr[title] {
+  border-bottom: $border-width dotted;
+  cursor: help;
+  text-decoration: none;
+}
+
+kbd {
+  @extend .label;
+  padding: 0.1rem 0.2rem;
+  font-size: $font-size-sm;
+}
+
+mark {
+  color: $body-font-color;
+  background: $highlight-color;
+  border-bottom: $unit-o solid darken($highlight-color, 15%);
+  border-radius: $border-radius;
+  padding: $unit-o $unit-h 0;
+}
+
+// Blockquote
+blockquote {
+  border-left: 4px solid $border-color;
+  margin-left: 0;
+  padding: $unit-2 $unit-4;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Lists
+ul,
+ol {
+  margin: $unit-4 0 $unit-4 $unit-4;
+  padding: 0;
+
+  ul,
+  ol {
+    margin: $unit-4 0 $unit-4 $unit-4;
+  }
+
+  li {
+    margin-top: $unit-2;
+  }
+}
+
+ul {
+  list-style: disc inside;
+
+  ul {
+    list-style-type: circle;
+  }
+}
+
+ol {
+  list-style: decimal inside;
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: $unit-2 0 $unit-4 0;
+  }
+}
+
+// text overflow
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.text-wrap {
+  word-break: break-all;
+}
+
+// align
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es2015",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "downlevelIteration": true,
+        "declaration": true,
+        "declarationDir": "../dist/types",
+        "types": [],
+        "typeRoots": ["src/types"],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "*.ts": [
+                "*"
+            ]
+        },
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost",
+            "es2015",
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+, "src/types/index.d.ts"    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

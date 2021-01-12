@@ -1,0 +1,74 @@
+.label {
+  color: lighten($body-font-color, 5%);
+  background: $bg-color-dark;
+  display: inline-block;
+  position: relative;
+  line-height: 1.25;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.1rem;
+  &.label-text:after {
+    background-color: currentColor;
+    border-radius: inherit;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.12;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+  }
+  &.outlined {
+    border: 1px solid currentColor;
+  }
+  &.rounded {
+    border-radius: 5rem;
+  }
+}
+
+// Chips
+.chip {
+  align-items: center;
+  background: rgb(236, 236, 236);
+  border-radius: 5rem;
+  display: inline-flex;
+  font-size:  0.8125rem;
+  height: 32px;
+  line-height: $unit-4;
+  margin: $unit-h;
+  max-width: $control-width-sm;
+  overflow: hidden;
+  padding: 0.4rem 0.75rem;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+
+  &.chip-text:after {
+    background-color: currentColor;
+    border-radius: inherit;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.12;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+  }
+
+  .avatar {
+    margin-left: -0.52rem;
+    margin-right: 4px;
+  }
+
+  .btn {
+    border-radius: 50%;
+    transform: scale(0.75);
+  }
+  &.outlined {
+    border: 1px solid currentColor;
+  }
+}

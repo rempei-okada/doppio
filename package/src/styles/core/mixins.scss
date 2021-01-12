@@ -1,0 +1,120 @@
+// Component focus shadow
+@mixin control-shadow($color: $primary-color) {
+  box-shadow: 0 0 0 0.1rem rgba($color, 0.2);
+}
+
+// Shadow mixin
+@mixin shadow-variant($offset) {
+  box-shadow: 0 $offset ($offset + 0.05rem) * 2 rgba($dark-color, 0.3);
+}
+
+// Text Ellipsis
+@mixin text-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Toast variant mixin
+@mixin toast-variant($color: $dark-color) {
+  background: rgba($color, 0.95);
+  border-color: $color;
+}
+
+// Background color utility mixin
+@mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
+  #{$name} {
+    background: $color !important;
+
+    @if (lightness($color) < 60) {
+      color: $light-color;
+    }
+  }
+}
+
+// Text color utility mixin
+@mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
+  #{$name} {
+    color: $color !important;
+  }
+
+  a#{$name} {
+    &:focus,
+    &:hover {
+      color: darken($color, 5%);
+    }
+    &:visited {
+      color: lighten($color, 5%);
+    }
+  }
+}
+
+// Clearfix mixin
+@mixin clearfix() {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+// Button variant mixin
+@mixin button-variant($color: $primary-color) {
+  background: $color;
+  border-color: darken($color, 3%);
+  color: $light-color;
+  &:focus {
+    @include control-shadow($color);
+  }
+  &:focus,
+  &:hover {
+    background: darken($color, 2%);
+    border-color: darken($color, 5%);
+    color: $light-color;
+  }
+  &:active,
+  &.active {
+    background: darken($color, 7%);
+    border-color: darken($color, 10%);
+    color: $light-color;
+  }
+  &.loading {
+    &::after {
+      border-bottom-color: $light-color;
+      border-left-color: $light-color;
+    }
+  }
+}
+
+@mixin button-outline-variant($color: $primary-color) {
+  background: $light-color;
+  border-color: $color;
+  color: $color;
+  &:focus {
+    @include control-shadow($color);
+  }
+  &:focus,
+  &:hover {
+    background: lighten($color, 50%);
+    border-color: darken($color, 2%);
+    color: $color;
+  }
+  &:active,
+  &.active {
+    background: $color;
+    border-color: darken($color, 5%);
+    color: $light-color;
+  }
+  &.loading {
+    &::after {
+      border-bottom-color: $color;
+      border-left-color: $color;
+    }
+  }
+}
+
+@mixin avatar-base($size: $unit-8) {
+  font-size: $size / 2;
+  height: $size;
+  width: $size;
+}

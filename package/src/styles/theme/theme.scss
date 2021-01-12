@@ -1,0 +1,197 @@
+$light-1: rgba(255, 255, 255, 1) !default;
+$light-2: rgba(248, 248, 248, 1) !default;
+$light-3: rgba(240, 240, 240, 1) !default;
+$light-4: rgba(232, 232, 232, 1) !default;
+$light-5: rgba(225, 225, 225, 1) !default;
+$light-6: rgba(218, 218, 218, 1) !default;
+$light-7: rgba(210, 210, 210, 1) !default;
+$light-8: rgba(202, 202, 202, 1) !default;
+$light-9: rgba(194, 194, 194, 1) !default;
+$light-10: rgba(186, 186, 186, 1) !default;
+$light-11: rgba(178, 178, 178, 1) !default;
+$light-12: rgba(170, 170, 170, 1) !default;
+
+$dark-1: rgba(12, 12, 12, 1) !default;
+$dark-2: rgba(24, 24, 24, 1) !default;
+$dark-3: rgba(30, 30, 30, 1) !default;
+$dark-4: rgba(36, 36, 36, 1) !default;
+$dark-5: rgba(42, 42, 42, 1) !default;
+$dark-6: rgba(48, 48, 48, 1) !default;
+$dark-7: rgba(54, 54, 54, 1) !default;
+$dark-8: rgba(61, 61, 61, 1) !default;
+$dark-9: rgba(68, 68, 68, 1) !default;
+$dark-10: rgba(74, 74, 74, 1) !default;
+$dark-11: rgba(82, 82, 82, 1) !default;
+$dark-12: rgba(90, 90, 90, 1) !default;
+
+$foreground-dark: #ffffff !default;
+$foreground-light: rgba(0, 0, 0, 0.8) !default;
+
+.background-1 {
+  background: $light-1 !important;
+}
+.background-2 {
+  background: $light-2 !important;
+}
+.background-3 {
+  background: $light-3 !important;
+}
+.background-4 {
+  background: $light-4 !important;
+}
+.background-5 {
+  background: $light-5 !important;
+}
+.background-6 {
+  background: $light-6 !important;
+}
+.background-6 {
+  background: $light-6 !important;
+}
+.background-7 {
+  background: $light-7 !important;
+}
+.background-8 {
+  background: $light-8 !important;
+}
+.background-9 {
+  background: $light-9 !important;
+}
+.background-10 {
+  background: $light-10 !important;
+}
+.background-11 {
+  background: $light-11 !important;
+}
+.background-12 {
+  background: $light-12 !important;
+}
+.foreground-1 {
+  color: $dark-1 !important;
+}
+.foreground-2 {
+  color: $dark-2 !important;
+}
+.foreground-3 {
+  color: $dark-3 !important;
+}
+.foreground-4 {
+  color: $dark-4 !important;
+}
+.foreground-5 {
+  color: $dark-5 !important;
+}
+.foreground-6 {
+  color: $dark-6 !important;
+}
+.foreground-6 {
+  color: $dark-6 !important;
+}
+.foreground-7 {
+  color: $dark-7 !important;
+}
+.foreground-8 {
+  color: $dark-8 !important;
+}
+.foreground-9 {
+  color: $dark-9 !important;
+}
+.foreground-10 {
+  color: $dark-10 !important;
+}
+.foreground-11 {
+  color: $dark-11 !important;
+}
+.foreground-12 {
+  color: $dark-12 !important;
+}
+
+*::selection {
+  color: $foreground-dark !important;
+  background: $dark-6 !important;
+}
+
+[dark] {
+  .background-1 {
+    background: $dark-1 !important;
+  }
+  .background-2 {
+    background: $dark-2 !important;
+  }
+  .background-3 {
+    background: $dark-3 !important;
+  }
+  .background-4 {
+    background: $dark-4 !important;
+  }
+  .background-5 {
+    background: $dark-5 !important;
+  }
+  .background-6 {
+    background: $dark-6 !important;
+  }
+  .background-7 {
+    background: $dark-7 !important;
+  }
+  .background-8 {
+    background: $dark-8 !important;
+  }
+  .background-9 {
+    background: $dark-9 !important;
+  }
+  .background-10 {
+    background: $dark-10 !important;
+  }
+  .background-11 {
+    background: $dark-11 !important;
+  }
+  .background-12 {
+    background: $dark-12 !important;
+  }
+  .foreground {
+    color: $foreground-dark !important;
+  }
+  .foreground-1 {
+    color: $light-1 !important;
+  }
+  .foreground-2 {
+    color: $light-2 !important;
+  }
+  .foreground-3 {
+    color: $light-3 !important;
+  }
+  .foreground-4 {
+    color: $light-4 !important;
+  }
+  .foreground-5 {
+    color: $light-5 !important;
+  }
+  .foreground-6 {
+    color: $light-6 !important;
+  }
+  .foreground-6 {
+    color: $light-6 !important;
+  }
+  .foreground-7 {
+    color: $light-7 !important;
+  }
+  .foreground-8 {
+    color: $light-8 !important;
+  }
+  .foreground-9 {
+    color: $light-9 !important;
+  }
+  .foreground-10 {
+    color: $light-10 !important;
+  }
+  .foreground-11 {
+    color: $light-11 !important;
+  }
+  .foreground-12 {
+    color: $light-12 !important;
+  }
+  *::selection {
+    color: $foreground-light !important;
+    background: $light-6 !important;
+  }
+}

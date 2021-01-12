@@ -1,0 +1,55 @@
+// input
+.toggle-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+// label
+.toggle-label {
+  width: 44px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  border-radius: 60px;
+  transition: 0.4s;
+  background: transparent;
+  box-sizing: border-box;
+  overflow: visible;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    left: 2px;
+    top: 2px;
+    z-index: 2;
+    @extend .background-2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+  }
+}
+
+// input:ckeecked
+.toggle-input:checked {
+  + .toggle-label {
+    background: currentColor;
+    &:after {
+      left: 22px;
+    }
+  }
+}
+
+.toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  border-radius: 60px;
+  @extend .background-4;
+}

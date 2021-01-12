@@ -1,0 +1,51 @@
+{
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "build && gh-pages -d build -b demo",
+    "serve": "docusaurus serve",
+    "lint": "eslint --cache \"**/*.js\" && stylelint \"**/*.css\""
+  },
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
+    "@mdx-js/react": "^1.6.22",
+    "clsx": "^1.1.1",
+    "doppio": "link:../",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.70",
+    "@tsconfig/docusaurus": "^1.0.2",
+    "@types/react": "^17.0.0",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-router-dom": "^5.1.6",
+    "babel-eslint": "^10.0.3",
+    "docusaurus-plugin-typedoc": "^0.4.1",
+    "eslint": "^7.16.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "http-server": "^0.12.3",
+    "isomorphic-style-loader": "^5.1.0",
+    "stylelint": "^13.8.0",
+    "typedoc": "^0.19.2",
+    "typedoc-plugin-markdown": "^3.1.1",
+    "typescript": "^4.1.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

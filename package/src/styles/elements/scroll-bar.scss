@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/*スクロールバーのレール*/
+::-webkit-scrollbar-track {
+    border-radius: 30px;
+    background: rgba(238, 238, 238, 0.095);
+}
+
+/*スクロールバーのつまみ*/
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: #cacaca;
+}

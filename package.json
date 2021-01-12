@@ -1,0 +1,10 @@
+{
+    "name": "doppio",
+    "version": "0.1.0",
+    "description": "Lightweight, simple and modern web design frame work, consists of pure CSS part and Script dependent part.",
+    "main": "dist/doppio.js",
+    "types": "dist/types/index.d.ts",
+    "license": "MIT",
+    "author": "rempei okada",
+    "private": false
+}

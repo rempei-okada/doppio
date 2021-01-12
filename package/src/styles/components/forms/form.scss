@@ -1,0 +1,15 @@
+// Forms
+.form-group {
+  &:not(:last-child) {
+    margin-bottom: $layout-spacing;
+  }
+}
+
+.form-horizontal {
+  padding: $layout-spacing 0;
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

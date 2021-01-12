@@ -1,0 +1,113 @@
+// Sliders
+// Credit: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+.slider {
+  appearance: none;
+  background: transparent;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  height: $unit-6;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.tooltip:not([data-tooltip]) {
+    &::after {
+      content: attr(value);
+    }
+  }
+
+  // Slider Thumb
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: currentColor;
+    color: currentColor;
+    border: 0;
+    border-radius: 50%;
+    height: $unit-3;
+    margin-top: -($unit-3 - $unit-h) / 2;
+    transition: transform 0.2s;
+    width: $unit-3;
+  }
+  &::-moz-range-thumb {
+    background: currentColor;
+    color: currentColor;
+    border: 0;
+    border-radius: 50%;
+    height: $unit-3;
+    transition: transform 0.2s;
+    width: $unit-3;
+  }
+  &::-ms-thumb {
+    background: currentColor;
+    color: currentColor;
+    border: 0;
+    border-radius: 50%;
+    height: $unit-3;
+    transition: transform 0.2s;
+    width: $unit-3;
+  }
+
+  &::-webkit-slider-thumb:hover {
+    transform: scale(1.18);
+  }
+  &::-moz-range-thumb:hover {
+    transform: scale(1.18);
+  }
+  &::-ms-thumb:hover {
+    transform: scale(1.18);
+  }
+
+  &:active {
+    &::-webkit-slider-thumb {
+      transform: scale(1.30);
+    }
+    &::-moz-range-thumb {
+      transform: scale(1.30);
+    }
+    &::-ms-thumb {
+      transform: scale(1.30);
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    &::-webkit-slider-thumb {
+      background: rgb(178, 178, 178);
+      transform: scale(1);
+    }
+    &::-moz-range-thumb {
+      background: rgb(178, 178, 178);
+      transform: scale(1);
+    }
+    &::-ms-thumb {
+      background: rgb(178, 178, 178);
+      transform: scale(1);
+    }
+  }
+
+  // Slider Track
+  &::-webkit-slider-runnable-track {
+    background: rgba(128, 128, 128, 0.122);
+    border-radius: $border-radius;
+    height: $unit-h;
+    width: 100%;
+  }
+  &::-moz-range-track {
+    background: rgba(128, 128, 128, 0.122);
+    border-radius: $border-radius;
+    height: $unit-h;
+    width: 100%;
+  }
+  &::-ms-track {
+    background: rgba(128, 128, 128, 0.122);
+    border-radius: $border-radius;
+    height: $unit-h;
+    width: 100%;
+  }
+  &::-ms-fill-lower {
+    background: currentColor;
+    color: currentColor;
+  }
+}
