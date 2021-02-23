@@ -1,7 +1,7 @@
 // Cards
 .card {
     background: $bg-color-light;
-    border-radius: $border-radius;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     @extend .shadow-3;
