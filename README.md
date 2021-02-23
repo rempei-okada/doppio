@@ -98,7 +98,7 @@ While convenient, the color pack increases the bundle export big size. So split 
 ### NPM
 
 ```ts
-import { ... } from "doppio/dist/doppio-colorpack.css";
+import "doppio/dist/doppio-colorpack.css";
 ```
 
 ### HTML
