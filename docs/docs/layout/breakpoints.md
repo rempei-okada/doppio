@@ -38,10 +38,10 @@ The responsive visibility utilities help show and hide elements on specific view
 
 For hiding elements on specific viewport sizes, there are classes <code>hide-xs</code>, <code>hide-sm</code>, <code>hide-md</code>, <code>hide-lg</code> and <code>hide-xl</code> available.
 
-* ```hide-xs``` hides elements when the window width is larger than or equal to <strong>0px</strong>.
-* ```hide-sm``` hides elements when the window width is larger than or equal to <strong>600px</strong>.
-* ```hide-md``` hides elements when the window width is larger than or equal to <strong>960px</strong>.
-* ```hide-lg``` hides elements when the window width is larger than or equal to <strong>1280px</strong>.
+* ```hide-xs``` hides elements when the window width is smaller than or equal to <strong>600px</strong>.
+* ```hide-sm``` hides elements when the window width is smaller than or equal to <strong>960px</strong>.
+* ```hide-md``` hides elements when the window width is smaller than or equal to <strong>1280px</strong>.
+* ```hide-lg``` hides elements when the window width is smaller than or equal to <strong>1920px</strong>.
 * ```hide-xl``` hides elements when the window width is larger than or equal to <strong>1920px</strong>.
 
 
@@ -55,8 +55,8 @@ For hiding elements on specific viewport sizes, there are classes <code>hide-xs<
 
 For showing elements on specific viewport sizes, there are classes <code>show-xs</code>, <code>show-sm</code>, <code>show-md</code>, <code>show-lg</code> and <code>show-xl</code> available.
 
-* ```show-xs``` shows elements when the window width is larger than or equal to <strong>0px</strong>.
-* ```show-sm``` shows elements when the window width is larger than or equal to <strong>600px</strong>.
-* ```show-md``` shows elements when the window width is larger than or equal to <strong>960px</strong>.
-* ```show-lg``` shows elements when the window width is larger than or equal to <strong>1280px</strong>.
+* ```show-xs``` shows elements when the window width is smaller than or equal to <strong>600px</strong>.
+* ```show-sm``` shows elements when the window width is smaller than or equal to <strong>960px</strong>.
+* ```show-md``` shows elements when the window width is smaller than or equal to <strong>1280px</strong>.
+* ```show-lg``` shows elements when the window width is smaller than or equal to <strong>1920px</strong>.
 * ```show-xl``` shows elements when the window width is larger than or equal to <strong>1920px</strong>.

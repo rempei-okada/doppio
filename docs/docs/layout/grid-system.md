@@ -241,19 +241,19 @@ There are <code>col-xs-&lt;1-12&gt;</code>, <code>col-sm-&lt;1-12&gt;</code>, <c
     </div>
 </div>
 
-* <code>col-xs-&lt;1-12&gt;</code> apply to window width larger  than or equal to <strong>0px</strong>.
+* <code>col-xs-&lt;1-12&gt;</code> apply to window width smaller  than or equal to <strong>600px</strong>.
 
 * <code>col-sm-&lt;1-12&gt;</code> apply to window width
-  larger than or equal to <strong>600px</strong>.
+  smaller than or equal to <strong>960px</strong>.
 
 * <code>col-md-&lt;1-12&gt;</code> apply to window width
-larger than or equal to <strong>960px</strong>.
+smaller than or equal to <strong>1280px</strong>.
 
 * <code>col-lg-&lt;1-12&gt;</code> apply to window width
-larger  than or equal to <strong>1280px</strong>.
+smaller than or equal to <strong>1920px</strong>.
 
 * <code>col-xl-&lt;1-12&gt;</code> apply to window width
-larger  than or equal to <strong>1920px</strong>.
+larger than or equal to <strong>1920px</strong>.
 
 ```html
 <div class="container">
@@ -267,10 +267,13 @@ larger  than or equal to <strong>1920px</strong>.
 
 ## Responsive container
 
+The responsive layout also provides fixed-width containers.
+Use <code>grid-xs</code>(600px), <code>grid-sm</code>(960px), <code>grid-md</code>(1280px), <code>grid-lg</code>(1920px) or <code>grid-xl</code>(100%) to the container for a fixed-width container with the specific max-width.
+
 100% width container with max-width set to grid-lg (1280px)
 
 ```html
-<div class="container grid-lg">
+<div class="container grid-md">
   <div class="columns">
     ...
   </div>
