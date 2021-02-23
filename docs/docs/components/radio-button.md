@@ -13,13 +13,31 @@ Add style`style="color: #aabbcc"` or color pack class ```{color}-text``` to spec
     <div class="radio green-text">
         <input id="1" type="radio" name="g" checked/>
         <label for="1">
-            <span>Option 2</span>
+            <span>Option 1</span>
         </label>
     </div>
     <div class="radio green-text">
         <input id="2" type="radio" name="g"  />
         <label for="2">
             <span>Option 2</span>
+        </label>
+    </div>
+        <div class="radio green-text">
+        <input id="3" type="radio" name="g"  />
+        <label for="3">
+            <span>Option 3</span>
+        </label>
+    </div>
+        <div class="radio green-text">
+        <input id="4" type="radio" name="g"  />
+        <label for="4">
+            <span>Option 4</span>
+        </label>
+    </div>
+    <div class="radio green-text">
+        <input id="5" type="radio" name="g"  />
+        <label for="5">
+            <span>Option 5</span>
         </label>
     </div>
 </div>

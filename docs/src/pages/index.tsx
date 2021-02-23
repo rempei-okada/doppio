@@ -212,9 +212,178 @@ function Home() {
                         </section>
                     </article>
 
+                    {/* Overreview */}
+
+                    <article className="container my-12" style={{ maxWidth: "800px" }} data-trigger>
+                        <section className="row">
+                            <div className="column" />
+                            <h2 className="column">Overview</h2>
+                            <div className="column" />
+                        </section>
+
+                        {/* Loader */}
+                        <section className="row">
+                            <div className="column col-6 col-sm-12 pa-2">
+                                <progress className="progress" value="25" max="100"></progress>
+                                <progress className="progress cyan-text" value="70" max="100"></progress>
+                                <progress className="progress deep-orange-text" style={{ animationDelay: "0.02s" }} max="100"></progress>
+                            </div>
+                            <div className="column col-6 col-sm-12 pa-2">
+                                <svg className="circular cyan-text" style={{ height: "60px", width: "60px" }}>
+                                    <circle />
+                                </svg>
+                                <svg className="circular teal-text" style={{ height: "60px", width: "60px" }}>
+                                    <circle />
+                                </svg>
+                                <svg className="circular lime-text" style={{ height: "60px", width: "60px" }}>
+                                    <circle />
+                                </svg>
+                            </div>
+                        </section>
+
+                        {/* Buttons */}
+                        <section className="row mt-4">
+                            <div className="column col-6 col-sm-12 pa-2">
+                                <button className="btn cyan xl ma-2">X Large</button>
+                                <button className="btn yellow foreground-5 lg ma-2">Large</button>
+                                <button className="btn lime ma-2">Normal</button>
+                                <button className="btn pink sm ma-2">Small</button>
+                                <button className="btn orange xs ma-3">X Small</button>
+                                <button className="btn deep-purple ma-2 block">Blocked</button>
+                            </div>
+                            <div className="column col-6 col-sm-12 pa-2">
+                                <button className="btn yellow rounded foreground-1 ma-2">Default Button</button>
+                                <button className="btn pink rounded ma-2">Button Color</button>
+                                <button className="btn orange-text outlined ma-2">Default Button</button>
+                                <button className="btn indigo-text outlined  ma-2">Button Color</button>
+
+                                <div className="d-flex mt-4">
+                                    <div className="radio purple-text">
+                                        <input id="r1" type="radio" name="g" />
+                                        <label htmlFor="r1">
+                                            <span>Option 1</span>
+                                        </label>
+                                    </div>
+                                    <div className="radio purple-text">
+                                        <input id="r2" type="radio" name="g" />
+                                        <label htmlFor="r2">
+                                            <span>Option 2</span>
+                                        </label>
+                                    </div>
+                                    <div className="radio purple-text">
+                                        <input id="r3" type="radio" name="g" />
+                                        <label htmlFor="r3">
+                                            <span>Option 3</span>
+                                        </label>
+                                    </div>
+                                    <div className="radio purple-text">
+                                        <input id="r4" type="radio" name="g" />
+                                        <label htmlFor="r4">
+                                            <span>Option 4</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Buttons */}
+                        <section className="row mt-4">
+                            <div className="column col-6 col-sm-12 pa-2">
+                                <span className="chip teal">C#</span>
+                                <span className="chip chip-text blue-text outlined">C++</span>
+                                <span className="chip">
+                                    Rust
+                                </span>
+                                <span className="chip lime">
+                                    Haskell
+                                </span>
+                                <div className="chip">
+                                    <figure className="avatar" data-initial="P"></figure>
+                                    Python
+                                </div>
+
+                                <div>
+                                    <label className="checkbox red-text ma-2">
+                                        <input type="checkbox" />
+                                        <span>Red</span>
+                                    </label>
+                                    <label className="checkbox orange-text  ma-2" >
+                                        <input type="checkbox" />
+                                        <span>Orange</span>
+                                    </label>
+                                    <label className="checkbox yellow-text  ma-2" >
+                                        <input type="checkbox" checked />
+                                        <span>Yellow Checled</span>
+                                    </label>
+                                    <label className="checkbox lime-text  ma-2" >
+                                        <input type="checkbox" />
+                                        <span>Lime</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div className="column col-6 col-sm-12 pa-2">
+                                <input className="slider lime-text" type="range" min="0" max="100" />
+                                <input className="slider cyan-text mt-3" type="range" min="0" max="100" />
+                                <input className="slider pink-text mt-3" type="range" min="0" max="100" />
+                            </div>
+                        </section>
+
+                        {/* Buttons */}
+                        <section className="row mt-4">
+                            <div className="column col-6 col-sm-12 pa-2">
+                                <div className="bg1 my-5">
+                                    <div className="toggle-switch">
+                                        <input id="toggle" className="toggle-input" type="checkbox" />
+                                        <label htmlFor="toggle" className="toggle-label orange-text" />
+                                    </div>
+                                </div>
+
+                                <div className="toggle-switch">
+                                    <input id="toggle" className="toggle-input" type="checkbox" />
+                                    <label htmlFor="toggle" className="toggle-label green-text" />
+                                </div>
+
+                                <div className="text-field solo white mt-4">
+                                    <input placeholder="Placeholder" />
+                                </div>
+
+                                <ul className="stepper purple-text my-12">
+                                    <li className="stepper-item">
+                                        <a className="tooltip" data-tooltip="Step 1">Step 1</a>
+                                    </li>
+                                    <li className="stepper-item active ">
+                                        <a className="tooltip" data-tooltip="Step 2">Step 2</a>
+                                    </li>
+                                    <li className="stepper-item">
+                                        <a className="tooltip" data-tooltip="Step 3">Step 3</a>
+                                    </li>
+                                    <li className="stepper-item">
+                                        <a className="tooltip" data-tooltip="Step 4">Step 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="column col-6 col-sm-12 pa-2">
+                                <input placeholder="Placeholder" />
+                                <label className="text-field cyan-text mt-4">
+                                    <input placeholder="Placeholder" />
+                                    <span>Textfield</span>
+                                </label>
+
+                                <textarea className="mt-4" placeholder="Text Area" />
+                                <label className="text-field cyan-text mt-4">
+                                    <textarea placeholder="Text Area" />
+                                    <span>Textfield</span>
+                                </label>
+                            </div>
+                        </section>
+                    </article>
+
+                    <h2 className="text-center mint-text my-12" data-trigger>There are various other Components and Features !</h2>
+
                     {/* Getting Standards */}
-                    <article className="mt-4 d-flex flex-column align-center">
-                        <h2>Getting Standard</h2>
+                    <article className="mt-12 d-flex flex-column align-center">
+                        <h2 data-trigger>Getting Standard</h2>
                         <section className="container text-center" >
                             <h3 data-trigger className="mb-5 mint-text mx-auto">Install with CDN</h3>
                             <section className="row">
@@ -298,7 +467,7 @@ function Home() {
                                 <div className="column col-12">
                                     <h3 data-trigger className="mb-5 mint-text mx-auto">Let's display the button !!</h3>
                                     <div data-trigger className="pa-3 mt-6 code" style={{ display: "block" }}>
-                                        {`<button class="btn cyan ml-3">Button Color</button>`}
+                                        {`<button className="btn cyan ml-3">Button Color</button>`}
                                     </div>
                                     <div data-trigger >
                                         <button className="btn cyan mt-5">Button Color</button>
@@ -328,7 +497,7 @@ function Home() {
                     </div>
                     <div className="my-12" />
                 </article>
-            </main>
-        </Layout>
+            </main >
+        </Layout >
     );
 }

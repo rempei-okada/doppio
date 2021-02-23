@@ -4,7 +4,7 @@ sidebar_label: Stepper
 slug: /stepper
 ---
 
-<ul class="stepper orange-text my-12">
+<ul class="stepper purple-text my-12">
   <li class="stepper-item">
     <a class="tooltip" data-tooltip="Step 1">Step 1</a>
   </li>

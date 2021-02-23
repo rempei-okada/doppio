@@ -4,9 +4,11 @@
     border-radius: $border-radius;
     display: flex;
     flex-direction: column;
+    @extend .shadow-3;
 
     &.outlined{
       border: $border-width solid $border-color;
+      box-shadow: none;
     }
   
     .card-header,

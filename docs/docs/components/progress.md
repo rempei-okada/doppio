@@ -4,10 +4,10 @@ sidebar_label: Progress
 slug: /progress
 ---
 
-<div class="my-5">
-  <progress class="progress" value="25" max="100"></progress>
-  <progress class="progress cyan-text" value="70" max="100"></progress>
-  <progress class="progress deep-orange-text"  style={{animationDelay:"0.02s"}} max="100"></progress>
+<div className="my-5">
+  <progress className="progress" value="25" max="100"></progress>
+  <progress className="progress cyan-text" value="70" max="100"></progress>
+  <progress className="progress deep-orange-text"  style={{animationDelay:"0.02s"}} max="100"></progress>
 </div>
 
 The Progress indicates the progress completion of a task.

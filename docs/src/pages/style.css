@@ -54,11 +54,6 @@ img{
 
 .toppage .btn {
   background: rgb(127, 218, 189);
-  color: rgb(68, 58, 50) !important;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
   transition: 0.4s;
 }
 

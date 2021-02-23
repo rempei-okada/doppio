@@ -9,23 +9,23 @@ Cards are flexible content containers.
 <div class="container my-5">
     <div class="row">
         <div class="column col-4 col-xs-12 pa-2">
-            <div class="card shadow-2">
-                <div class="card-header">
-                    <div class="card-title">TypeScript</div>
-                    <div class="card-subtitle text-gray">
-                        programinng language
-                    </div>
-                </div>
+            <div class="card">
                 <div class="card-image">
                     <img
                         class="img-responsive"
                         src="/img/docs/lake.jpg"
                     />
                 </div>
-                <div class="card-body">
+                <div class="card-header px-6 pt-3">
+                    <h3 class="card-title">TypeScript</h3>
+                    <div class="card-subtitle gray-text">
+                        programinng language
+                    </div>
+                </div>
+                <div class="card-body px-6">
                     TypeScript is an open-source programming language developed and maintained by Microsoft. 
                 </div>
-                <div class="card-footer">
+                <div class="card-footer px-6 pb-6">
                     <div class="btn-group btn-group-block">
                         <a class="btn cyan" href="https://github.com/microsoft/TypeScript" target="_blank">Github</a>
                     </div>
