@@ -241,23 +241,19 @@ There are <code>col-xs-&lt;1-12&gt;</code>, <code>col-sm-&lt;1-12&gt;</code>, <c
     </div>
 </div>
 
-* <code>col-xs-&lt;1-12&gt;</code> apply to window width  
-smaller than or equal to <strong>480px</strong>.
+* <code>col-xs-&lt;1-12&gt;</code> apply to window width larger  than or equal to <strong>0px</strong>.
 
 * <code>col-sm-&lt;1-12&gt;</code> apply to window width
-  smaller than or equal to <strong>600px</strong>.
+  larger than or equal to <strong>600px</strong>.
 
 * <code>col-md-&lt;1-12&gt;</code> apply to window width
-smaller than or equal to <strong>840px</strong>.
+larger than or equal to <strong>960px</strong>.
 
 * <code>col-lg-&lt;1-12&gt;</code> apply to window width
-smaller than or equal to <strong>960px</strong>.
+larger  than or equal to <strong>1280px</strong>.
 
 * <code>col-xl-&lt;1-12&gt;</code> apply to window width
-smaller than or equal to <strong>1280px</strong>.
-
-* <code>col-&lt;1-12&gt;</code> apply to all window width,
-including the width wider than <strong>1280px</strong>.
+larger  than or equal to <strong>1920px</strong>.
 
 ```html
 <div class="container">
@@ -271,10 +267,7 @@ including the width wider than <strong>1280px</strong>.
 
 ## Responsive container
 
-The responsive layout also provides fixed-width containers.
-Use <code>grid-xs</code>(480px), <code>grid-sm</code>(600px), <code>grid-md</code>(840px), <code>grid-lg</code>(960px) or <code>grid-xl</code>(1280px) to the container for a fixed-width container with the specific max-width.
-
-100% width container with max-width set to grid-lg (960px)
+100% width container with max-width set to grid-lg (1280px)
 
 ```html
 <div class="container grid-lg">
@@ -283,40 +276,3 @@ Use <code>grid-xs</code>(480px), <code>grid-sm</code>(600px), <code>grid-md</cod
   </div>
 </div>
 ```
-
-## Responsive visibility
-
-The responsive visibility utilities help show and hide elements on specific viewport sizes.
-
-|         | size-xs | size-sm | size-md | size-lg | size-xl |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| hide-xs |         | ○       | ○       | ○       | ○       |
-| hide-sm |         |         | ○       | ○       | ○       |
-| hide-md |         |         |         | ○       | ○       |
-| hide-lg |         |         |         |         | ○       |
-| hide-xl |         |         |         |         |         |
-
-For hiding elements on specific viewport sizes, there are classes <code>hide-xs</code>, <code>hide-sm</code>, <code>hide-md</code>, <code>hide-lg</code> and <code>hide-xl</code> available.
-
-* ```hide-xs``` hides elements when the window width is smaller than or equal to <strong>480px</strong>.
-* ```hide-sm``` hides elements when the window width is smaller than or equal to <strong>600px</strong>.
-* ```hide-md``` hides elements when the window width is smaller than or equal to <strong>840px</strong>.
-* ```hide-lg``` hides elements when the window width is smaller than or equal to <strong>960px</strong>.
-* ```hide-xl``` hides elements when the window width is smaller than or equal to <strong>1280px</strong>.
-
-
-|         | size-xs | size-sm | size-md | size-lg | size-xl |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| show-xs | ○       |         |         |         |         |
-| show-sm | ○       | ○       |         |         |         |
-| show-md | ○       | ○       | ○       |         |         |
-| show-lg | ○       | ○       | ○       | ○       |         |
-| show-xl | ○       | ○       | ○       | ○       | ○       |
-
-For showing elements on specific viewport sizes, there are classes <code>show-xs</code>, <code>show-sm</code>, <code>show-md</code>, <code>show-lg</code> and <code>show-xl</code> available.
-
-* ```show-xs``` shows elements when the window width is smaller than or equal to <strong>480px</strong>.
-* ```show-sm``` shows elements when the window width is smaller than or equal to <strong>600px</strong>.
-* ```show-md``` shows elements when the window width is smaller than or equal to <strong>840px</strong>.
-* ```show-lg``` shows elements when the window width is smaller than or equal to <strong>960px</strong>.
-* ```show-xl``` shows elements when the window width is smaller than or equal to <strong>1280px</strong>.

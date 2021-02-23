@@ -1,5 +1,5 @@
 {
-    "name": "doppio",
+    "name": "doppio-ui",
     "version": "0.1.0",
     "description": "Lightweight, simple and modern web design frame work, consists of pure CSS part and Script dependent part.",
     "main": "dist/doppio.js",

@@ -21,6 +21,7 @@ module.exports = {
             "elements/typography",
         ],
         "CSS Layouts": [
+            "layout/breakpoints",
             "layout/grid-system",
             "layout/spacing",
             "layout/utility",
