@@ -5,34 +5,34 @@
 Doppio is a lightweight, simple and modern web design frame work.
 Most core features are built entirely with CSS, but can be made even more powerful by loading scripts.
 
-[DEMO](https://rempei-okada.github.io/doppio/)
+[DEMO](https://rempei-okada.github.io/doppio-ui/)
 
-># Features
-
-Doppio is good for building websites, not web apps.
-so it's designed to keep other libraries and frameworks clean.
-Standard version consists of pure CSS only and Clean.
-
-### Bundles
-
-| Package    | js   | css  |
-| ---------- | ---- | ---- |
-| Standard   | 0KB  | 47KB |
-| Full       | 20KB | 47KB |
-| Color Pack | 0KB  | 46KB |
 
 ### Modules
 
-|               | Standard | Full | Color Pack |
-| ------------- | -------- | ---- | ---------- |
-| Comopnents    | ○        | ○    |            |
-| Elements      | ○        | ○    |            |
-| Layouts       | ○        | ○    |            |
-| Simple Colors | ○        | ○    |            |
-| Colors Pack   |          |      | ○          |
-| Utilities     | ○        | ○    |            |
-| Scripts       |          | ○    |            |
+|                             | Standard | Lite | Full | Color Pack |
+| --------------------------- | -------- | ---- | ---- | ---------- |
+| Comopnents                  | ○        | ○    | ○    |            |
+| Elements                    | ○        | ○    | ○    |            |
+| Layouts                     | ○        | ○    | ○    |            |
+| Simple spacing              | ○        | ○    | ○    |            |
+| Responsive and full spacing | ○        |      | ○    |            |
+| Simple Colors Pack          | ○        | ○    | ○    |            |
+| Full Colors Pack            |          |      |      | ○          |
+| Utilities                   | ○        | ○    | ○    |            |
+| Scripts                     |          |      | ○    |            |
 
+### Bundles
+
+| Package    | js   | css   |
+| ---------- | ---- | ----- |
+| Standard   | 0KB  | 200KB |
+| Lite       | 0KB  | 45KB  |
+| Full       | 20KB | 250KB |
+| Color Pack | 0KB  | 50KB  |
+
+There is a difference in size because there is a "Responsive and full spacing" module of about 160KB that is packed with responsive margins and padding.
+The Lite version does not include responsive or negative margins. Therefore the size is small.
 
 ---
  
@@ -47,7 +47,15 @@ There are various installation way. Please choose the most suitable way.
 Includes CSS and Javascript so you do not have to load css or anything else
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/doppio/dist/doppio.js"/>
+<link rel="stylesheet" href="https://unpkg.com/doppio-ui/dist/doppio.js"/>
+
+<script>
+    // load styles to head element.
+    Doppio.load();
+
+    // unload styles from head element.
+    Doppio.unload();
+</script>
 ```
 
 ### Standard
@@ -55,14 +63,29 @@ Includes CSS and Javascript so you do not have to load css or anything else
 When using as Pure CSS as standard version.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/doppio/dist/doppio-css.css"/>
+<link rel="stylesheet" href="https://unpkg.com/doppio-ui/dist/doppio-css.css"/>
+```
+
+### Lite
+
+When using as Pure CSS as lite version.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/doppio-ui/dist/doppio-lite.css"/>
 ```
 
 When you need additional script as full version
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/doppio/dist/doppio-js.js"/>
+<link rel="stylesheet" href="https://unpkg.com/doppio-ui/dist/doppio-js.js"/>
 ```
+
+### Color Pack addon
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/doppio-ui/dist/doppio-colorpack.css"/>
+```
+
 >## Package Manager
 
 ### Install with npm
@@ -82,29 +105,40 @@ $ yarn add doppio
 If you import it somewhere in your source, it includes CSS and Javascript so you don't have to load css file or anything else
 
 ```ts
-import { ... } from "doppio";
+import { load, unload } from "doppio-ui";
+
+// load styles to head element.
+load();
+// unload styles from head element.
+unload();
 ```
 
 ### Only pure Css as Standard Version
 
 ```ts
-import "doppio/dist/doppio-css.css"
+import "doppio-ui/dist/doppio-css.css"
 ```
 
->## Color pack
+### Only pure Css as Lite Version
+
+```ts
+import "doppio-ui/dist/doppio-lite.css"
+```
+
+>## Color pack addon
 
 While convenient, the color pack increases the bundle export big size. So split bundles to reduce unnecessary features.
 
 ### NPM
 
 ```ts
-import "doppio/dist/doppio-colorpack.css";
+import "doppio-ui/dist/doppio-colorpack.css";
 ```
 
 ### HTML
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/doppio/dist/doppio-colorpack.css"/>
+<link rel="stylesheet" href="https://unpkg.com/doppio-ui/dist/doppio-colorpack.css"/>
 ```
 
 >## From Source to import just the features you need
@@ -113,18 +147,18 @@ Build from src with typescript to enable tree shaking
 
 ```ts
 // Build from src with typescript to enable tree shaking
-import { ... } from "doppio/package/src";
+import { ... } from "doppio-ui/package/src";
 ```
 
 Build from src with typescript to enable tree shaking
 
 ```ts
 // Import all styles
-import { ... } from "doppio/package/src/styles/index.scss";
+import { ... } from "doppio-ui/package/src/styles/index.scss";
 // Import à la carte style
-import "doppio/package/src/styles/core.scss";
-import "doppio/package/src/styles/utilities.scss";
-import "doppio/package/src/styles/colors.scss";
+import "doppio-ui/package/src/styles/core.scss";
+import "doppio-ui/package/src/styles/utilities.scss";
+import "doppio-ui/package/src/styles/colors.scss";
 ```
 
 ---
@@ -146,8 +180,8 @@ If you want to support old browser, remove all scripts and add this and pure css
 ### HTML
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/doppio/dist/doppio-css.css"/>
-<link rel="stylesheet" href="https://unpkg.com/doppio/dist/doppio-js.oldbrowser.css"/>
+<link rel="stylesheet" href="https://unpkg.com/doppio-ui/dist/doppio-css.css"/>
+<link rel="stylesheet" href="https://unpkg.com/doppio-ui/dist/doppio-js.oldbrowser.css"/>
 ```
 
 ### NPM MODULES

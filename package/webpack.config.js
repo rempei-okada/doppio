@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = [
+    buildConfig({ entry: "./src/lite/lite.ts", splitCss: true, cssFileName: "doppio-lite.css", jsFileName: "_.js" }),
     buildConfig({ entry: "./src/index.ts", splitCss: true, cssFileName: "doppio-css.css", jsFileName: "doppio-js.js" }),
     buildConfig({ entry: "./src/index.ts", splitCss: true, old: true, cssFileName: "doppio-css.css", jsFileName: "doppio-js.oldbrowser.js" }),
     buildConfig({ entry: "./src/index.ts", jsFileName: "doppio.js" }),
@@ -62,8 +63,8 @@ function buildConfig(option) {
                     test: /\.(sa|sc|c)ss$/,
                     use: [
                         {
-                            loader: 'style-loader', options: {
-                                injectType: 'lazyStyleTag',
+                            loader: "style-loader", options: {
+                                injectType: "lazyStyleTag",
                                 modules: {
                                     namedExport: true,
                                 },

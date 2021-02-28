@@ -43,19 +43,8 @@ The direction designates the side the property applies to:
 * ```a``` - applies the spacing for the property in all directions
 * The size controls the increment of the property in 4px intervals:
 
-* ```0``` - eliminates all margin or padding by setting it to 0
-* ```1``` - sets ```margin``` or padding to 4px
-* ```2``` - sets ```margin``` or padding to 8px
-* ```3``` - sets ```margin``` or padding to 12px
-* ```4``` - sets ```margin``` or padding to 16px
-* ```5``` - sets ```margin``` or padding to 20px
-* ```6``` - sets ```margin``` or padding to 24px
-* ```7``` - sets ```margin``` or padding to 28px
-* ```8``` - sets ```margin``` or padding to 32px
-* ```9``` - sets ```margin``` or padding to 36px
-* ```10``` - sets ```margin``` or padding to 40px
-* ```11``` - sets ```margin``` or padding to 44px
-* ```12``` - sets ```margin``` or padding to 48px
+* ```0``` - eliminates all ```margin``` or ```padding``` by setting it to 0
+* ```1 - 16``` - sets ```margin``` or ```padding``` to ```specified number * 4```. For example ```ml-12``` sets to ```48px```. Lite ver ```1 -12```.
 * ```auto``` - sets the spacing to ```auto```
 
 ```html

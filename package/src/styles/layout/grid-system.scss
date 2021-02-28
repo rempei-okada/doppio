@@ -6,19 +6,15 @@
   box-sizing: border-box;
   $grid-spacing: ($layout-spacing / ($layout-spacing * 0 + 1)) * $html-font-size;
 
-  &.grid-lg {
-    max-width: 100%;
-  }
-
-  &.grid-md {
+  &.lg {
     max-width: $grid-spacing * 2 + $size-lg;
   }
 
-  &.grid-sm {
+  &.md {
     max-width: $grid-spacing * 2 + $size-md;
   }
 
-  &.grid-xs {
+  &.sm {
     max-width: $grid-spacing * 2 + $size-sm;
   }
 }

@@ -1,0 +1,154 @@
+// core
+@import "../styles/core/mixins.scss";
+@import "../styles/core/variables.scss";
+@import "../styles/core/function.scss";
+
+// themes
+@import "../styles/theme/theme.scss";
+
+// layouts
+.clearfix {
+    @include clearfix();
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.p-relative {
+    position: relative !important;
+}
+
+.p-absolute {
+    position: absolute !important;
+}
+
+.p-fixed {
+    position: fixed !important;
+}
+
+.p-sticky {
+    position: sticky !important;
+}
+
+.p-centered {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-centered {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+// margin
+@mixin padding-variant($id: 1, $size: 4px) {
+    .pa-#{$id} {
+        padding: $size !important;
+    }
+
+    .pb-#{$id} {
+        padding-bottom: $size !important;
+    }
+
+    .pl-#{$id} {
+        padding-left: $size !important;
+    }
+
+    .pr-#{$id} {
+        padding-right: $size !important;
+    }
+
+    .pt-#{$id} {
+        padding-top: $size !important;
+    }
+
+    .px-#{$id} {
+        padding-left: $size !important;
+        padding-right: $size !important;
+    }
+
+    .py-#{$id} {
+        padding-bottom: $size !important;
+        padding-top: $size !important;
+    }
+}
+
+@mixin margin-variant($id: 1, $size: 4px) {
+    .ma-#{$id} {
+        margin: $size !important;
+    }
+
+    .mb-#{$id} {
+        margin-bottom: $size !important;
+    }
+
+    .ml-#{$id} {
+        margin-left: $size !important;
+    }
+
+    .mr-#{$id} {
+        margin-right: $size !important;
+    }
+
+    .mt-#{$id} {
+        margin-top: $size !important;
+    }
+
+    .mx-#{$id} {
+        margin-left: $size !important;
+        margin-right: $size !important;
+    }
+}
+
+// Spacing
+@include margin-variant(auto, auto);
+@include padding-variant(auto, auto);
+
+@include margin-variant(0, 0);
+@include padding-variant(0, 0);
+
+@for $var from 1 to 13 {
+    @include margin-variant($var, $var * 4px);
+    @include padding-variant($var, $var * 4px);
+}
+
+@import "../styles/layout/grid-system.scss";
+@import "../styles/layout/shadow.scss";
+@import "../styles/layout/flex.scss";
+
+// elements
+@import "../styles/elements/typography.scss";
+@import "../styles/elements/labels.scss";
+@import "../styles/elements/avater.scss";
+@import "../styles/elements/media.scss";
+@import "../styles/elements/utilities.scss";
+@import "../styles/elements/link.scss";
+@import "../styles/elements/scroll-bar.scss";
+
+// components
+@import "../styles/components/table.scss";
+@import "../styles/components/slider.scss";
+@import "../styles/components/progress.scss";
+@import "../styles/components/loading.scss";
+@import "../styles/components/stepper.scss";
+@import "../styles/components/card.scss";
+@import "../styles/components/tooltip.scss";
+@import "../styles/components/button.scss";
+@import "../styles/components/forms/switch.scss";
+@import "../styles/components/forms/form.scss";
+@import "../styles/components/radio-button.scss";
+
+// forms
+@import "../styles/components/text-fields.scss";
+@import "../styles/components/checkbox.scss";
+
+// colors
+@import "../styles/colors/colors.scss";

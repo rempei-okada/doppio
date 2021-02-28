@@ -268,12 +268,12 @@ larger than or equal to <strong>1920px</strong>.
 ## Responsive container
 
 The responsive layout also provides fixed-width containers.
-Use <code>grid-xs</code>(600px), <code>grid-sm</code>(960px), <code>grid-md</code>(1280px), <code>grid-lg</code>(1920px) or <code>grid-xl</code>(100%) to the container for a fixed-width container with the specific max-width.
+Use <code>sm</code>(600px), <code>md</code>(960px), <code>lg</code>(1280px) or <code>xl</code>(1920px) to the container for a fixed-width container with the specific max-width.
 
-100% width container with max-width set to grid-lg (1280px)
+100% width container with max-width set to lg (1280px)
 
 ```html
-<div class="container grid-md">
+<div class="container lg">
   <div class="columns">
     ...
   </div>

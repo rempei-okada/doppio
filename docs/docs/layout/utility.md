@@ -64,37 +64,19 @@ where `property` is a position style property.
 ## Sizing
 
 Sizing utilities are used for sizing things.
-You can set an element's width % style by using the class `{min|max|none}-strech-{x|y}-{0|10|20|30...100}`,
+You can set an element's fill 100% style by using the class `fill-{width|height}`,
 where `property` is a position style property.
 
 For Example
 
 | class          | style         | property |
 | -------------- |-------------- | -------- |
-| strech         | width,height  | 100%     |
-| strech-y       | height        | 100%     |
-| strech-x       | width         | 100%     |
-| strech-60      | width,height  | 60%      |
-| strech-y-60    | height        | 60%      |
-| min-strech-x-60| min-width     | 60%      |
-
-Sizing utilities are used for sizing things.
-You can set an element's width px style by using the class  `{min|max|none}-{width|height}-{xs|sm|md|lg|xl}`,
-where `property` is a position style property.
-
-| class          | size          |
-| -------------- |-------------- |
-| xs             | 480px         |
-| sm             | 600px         |
-| md             | 840px         |
-| lg             | 960px         |
-| xl             | 1280px        |
+| fill           | width,height  | 100%     |
+| fill-height    | height        | 100%     |
+| fill-width     | width         | 100%     |
 
 ```html
-<div class="strech"></div>
-<div class="strech-x-40"></div>
-<div class="max-strech-x-40"></div>
-<div class="width-sm"></div>
-<div class="min-width-lg"></div>
-<div class="max-width-xs"></div>
+<div class="fill"></div>
+<div class="fill-height"></div>
+<div class="fill-width"></div>
 ```
